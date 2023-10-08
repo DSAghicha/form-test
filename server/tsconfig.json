@@ -1,0 +1,26 @@
+{
+	"target": "ESNext",
+	"module": "ESNext",
+	"lib": ["ES2022"],
+	"extends": "@tsconfig/node16/tsconfig.json",
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"outDir": "build/",
+		"paths": {
+			"*": ["./src/@types/*"],
+			"@base": ["./src/bases/index.ts"],
+			"@database": ["./src/databases/index.ts"],
+			"@interfaces": ["./src/interfaces/index.ts"],
+			"@middlewares": ["./src/middlewares/index.ts"],
+			"@models": ["./src/models/index.ts"],
+			"@modules": ["./src/modules/index.ts"],
+			"@utils": ["./src/utils/index.ts"]
+		},
+		"removeComments": true,
+		"resolveJsonModule": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
