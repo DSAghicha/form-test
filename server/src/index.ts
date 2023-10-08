@@ -5,7 +5,7 @@ const app = express()
 const PORT = 3001
 
 app.use(express.json({ limit: '50mb' }))
-app.post('/api/submitForm', async (req: Request, res: Response) => handleFormDataSubmit(req, res))
+app.post('/api/submitForm', async (req: Request, res: Response) => handleFormDataSubmit(req.body, res))
 
 mongoose
 	.connect('mongodb://localhost:27017/form-test')
