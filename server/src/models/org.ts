@@ -14,7 +14,8 @@ const orgSchema = new mongoose.Schema({
 		unique: true
 	},
 	strength: Number,
-	orgDate: Date
+	orgDate: Date,
+	productCount: Number
 })
 
 orgSchema.plugin(mongooseUniqueValidator)

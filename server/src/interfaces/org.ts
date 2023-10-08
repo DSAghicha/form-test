@@ -5,4 +5,5 @@ export default interface IOrg {
 	gstNumber: string
 	strength: number
 	orgDate: Date
+	productCount: number
 }
