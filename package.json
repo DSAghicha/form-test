@@ -1,6 +1,9 @@
 {
 	"name": "form-test",
 	"version": "1.0.0",
+	"scripts": {
+		"serve": "concurrently \"cd server && yarn dev\" \"cd client && yarn start\""
+	},
 	"dependencies": {
 		"concurrently": "^8.2.1"
 	},
