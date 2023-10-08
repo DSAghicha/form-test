@@ -1,0 +1,114 @@
+:root {
+	--clr__neutral__400: hsl(240, 24%, 8%);
+	--spacing: 1em;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html:focus-within {
+	scroll-behavior: auto;
+}
+button {
+	font: inherit;
+	outline: none;
+	border: none;
+}
+/*  */
+#main {
+	font: 1rem Arial, sans-serif;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#main .container {
+	width: 80%;
+	height: inherit;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#main .container form {
+	height: inherit;
+	padding: calc(var(--spacing) * 2);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form__cr {
+	width: 100%;
+	display: inherit;
+	flex-direction: column;
+	position: relative;
+	margin-top: calc(var(--spacing));
+}
+.form__cr label {
+	text-align: start;
+}
+.form__cr input {
+	width: 100%;
+	padding: 12px 20px;
+	height: 40px;
+	display: inline-block;
+	border: 1px solid var(--clr__neutral__400);
+	border-radius: calc(var(--spacing) / 2);
+	box-sizing: border-box;
+	margin-top: 12px;
+}
+
+#main .container form #addButton,
+#main .container form input[type='submit'] {
+	padding: 12px;
+	border-radius: calc(var(--spacing) / 2);
+	background-color: #0082a2;
+	color: white;
+	margin: calc(var(--spacing)) 0;
+	margin-left: auto;
+	display: inline-block;
+	cursor: pointer;
+}
+#main .container form table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#main .container form table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #0082a2;
+	color: white;
+}
+
+#main .container form table td,
+#main .container form table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#main .container form table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#main .container form table tr:hover {
+	background-color: #ddd;
+}
+
+#main .container form input[type='submit'] {
+	width: 100%;
+}
+
+h4 {
+	width: 100%;
+	text-align: center;
+}
+hr {
+	width: 100%;
+	margin: var(--spacing);
+}
