@@ -4,6 +4,9 @@
 # dependencies
 node_modules/
 
+# Images
+orgData/
+
 # production
 /build
 
