@@ -8,7 +8,8 @@ node_modules/
 orgData/
 
 # production
-/build
+build/
+dist/
 
 # debug
 npm-debug.log*
