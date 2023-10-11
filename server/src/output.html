@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Invoice</title>
+		<style>
+			.container {
+				margin: 20px;
+				padding: 20px;
+			}
+			.container header {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 1rem;
+			}
+			.details {
+				display: flex;
+				flex-direction: row;
+			}
+			.details .column {
+				width: 50%;
+			}
+			.billing-period,
+			footer {
+				text-align: center;
+			}
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-top: 20px;
+				border: 1px solid black;
+			}
+			th,
+			td {
+				border: 1px solid black;
+				padding: 8px;
+			}
+			th {
+				background-color: #f2f2f2;
+			}
+			.payment-info,
+			footer {
+				margin-top: 20px;
+			}
+			.payment-column {
+				width: 30%;
+				display: inline-block;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<img
+					src="./logo-circle.png"
+					width="100"
+					alt="OrgLogo"
+				/>
+				<h1>ABCD Corp</h1>
+			</header>
+			<section class="details">
+				<div class="column">
+					<p><b>Owner: </b>John Doe</p>
+					<p><b>Ref Id: </b>ABCD44555</p>
+					<p><b>Strength: </b>50</p>
+					<p><b>Last bill date: </b>10 September, 2023</p>
+				</div>
+				<div class="column">
+					<p><b>Established on: </b>Sun Oct 08 2023</p>
+					<p><b>GST number: </b>457625245451FRDGST</p>
+					<p><b>Product count: </b>150</p>
+					<p><b>Last bill amount: </b>₹ 7000</p>
+				</div>
+			</section>
+			<p class="billing-period">Billing for: 01 September, 2023 to 30 September, 2023</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Sr No</th>
+						<th>Product Name</th>
+						<th>Product Description</th>
+						<th>Amount</th>
+						<th>Quantity</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+					<tr>
+						<td>1</td>
+						<td>Abeu</td>
+						<td>Bypass Left Hand Vein to Upper Vein, Perc Endo Approach</td>
+						<td>₹ 7368</td>
+						<td>40</td>
+						<td>₹ 294720</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>Martainn</td>
+						<td>Removal of Ext Fix from L Metatarsal, Perc Approach</td>
+						<td>₹ 6152</td>
+						<td>40</td>
+						<td>₹ 246080</td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>Phaidra</td>
+						<td>Change Drainage Device in Pericard Cav, Extern Approach</td>
+						<td>₹ 8259</td>
+						<td>18</td>
+						<td>₹ 148662</td>
+					</tr>
+					
+					<tr>
+						<td>4</td>
+						<td>Bette-ann</td>
+						<td>Drain L Inguinal Region w Drain Dev, Perc Endo</td>
+						<td>₹ 1903</td>
+						<td>42</td>
+						<td>₹ 79926</td>
+					</tr>
+					
+					<tr>
+						<td>5</td>
+						<td>Katha</td>
+						<td>Fusion of R Shoulder Jt with Autol Sub, Perc Endo Approach</td>
+						<td>₹ 4797</td>
+						<td>38</td>
+						<td>₹ 182286</td>
+					</tr>
+					
+					<tr>
+						<td>6</td>
+						<td>Gerrie</td>
+						<td>Occlusion of Left Large Intestine, Perc Endo Approach</td>
+						<td>₹ 7707</td>
+						<td>33</td>
+						<td>₹ 254331</td>
+					</tr>
+					
+					<tr>
+						<td>7</td>
+						<td>Roanna</td>
+						<td>Excision of Sternum, Open Approach, Diagnostic</td>
+						<td>₹ 9962</td>
+						<td>3</td>
+						<td>₹ 29886</td>
+					</tr>
+					
+					<tr>
+						<td>8</td>
+						<td>Ben</td>
+						<td>Removal of Traction Apparatus on Left Foot</td>
+						<td>₹ 9005</td>
+						<td>24</td>
+						<td>₹ 216120</td>
+					</tr>
+					
+					<tr>
+						<td>9</td>
+						<td>Corilla</td>
+						<td>Excision of Ampulla of Vater, Endo</td>
+						<td>₹ 5167</td>
+						<td>5</td>
+						<td>₹ 25835</td>
+					</tr>
+					
+					<tr>
+						<td>10</td>
+						<td>Leonore</td>
+						<td>Extirpation of Matter from R Metacarpocarp Jt, Perc Approach</td>
+						<td>₹ 8647</td>
+						<td>42</td>
+						<td>₹ 363174</td>
+					</tr>
+					
+					<tr>
+						<td>11</td>
+						<td>Anatol</td>
+						<td>Replace Scalp Skin w Autol Sub, Part Thick, Extern</td>
+						<td>₹ 4111</td>
+						<td>12</td>
+						<td>₹ 49332</td>
+					</tr>
+					
+					<tr>
+						<td>12</td>
+						<td>Yorker</td>
+						<td>Resection of Lower Esophagus, Perc Endo Approach</td>
+						<td>₹ 9039</td>
+						<td>6</td>
+						<td>₹ 54234</td>
+					</tr>
+					
+					<tr>
+						<td>13</td>
+						<td>Gael</td>
+						<td>Drainage of Ampulla of Vater, Perc Endo Approach, Diagn</td>
+						<td>₹ 4708</td>
+						<td>32</td>
+						<td>₹ 150656</td>
+					</tr>
+					
+					<tr>
+						<td>14</td>
+						<td>Anallese</td>
+						<td>Drainage of Left Lacrimal Gland, Open Approach</td>
+						<td>₹ 3440</td>
+						<td>28</td>
+						<td>₹ 96320</td>
+					</tr>
+					
+					<tr>
+						<td>15</td>
+						<td>Barr</td>
+						<td>Tendons, Removal</td>
+						<td>₹ 2796</td>
+						<td>49</td>
+						<td>₹ 137004</td>
+					</tr>
+					
+					<tr>
+						<td>16</td>
+						<td>Cord</td>
+						<td>Extirpation of Matter from Brachial Plexus, Open Approach</td>
+						<td>₹ 3167</td>
+						<td>18</td>
+						<td>₹ 57006</td>
+					</tr>
+					
+					<tr>
+						<td>17</td>
+						<td>Flore</td>
+						<td>Removal of Ext Fix from L Ulna, Extern Approach</td>
+						<td>₹ 8136</td>
+						<td>41</td>
+						<td>₹ 333576</td>
+					</tr>
+					
+					<tr>
+						<td>18</td>
+						<td>Jonathan</td>
+						<td>Reposition Right Maxilla, Open Approach</td>
+						<td>₹ 1999</td>
+						<td>22</td>
+						<td>₹ 43978</td>
+					</tr>
+					
+					<tr>
+						<td>19</td>
+						<td>Selig</td>
+						<td>Revision of Intralum Dev in Pancreat Duct, Perc Approach</td>
+						<td>₹ 7989</td>
+						<td>37</td>
+						<td>₹ 295593</td>
+					</tr>
+					
+					<tr>
+						<td>20</td>
+						<td>Pancho</td>
+						<td>Dilation of Splenic Art with 2 Intralum Dev, Open Approach</td>
+						<td>₹ 4977</td>
+						<td>47</td>
+						<td>₹ 233919</td>
+					</tr>
+					
+					<tr>
+						<td>21</td>
+						<td>Lola</td>
+						<td>CT Scan of Abd Aorta using Intravasc Optic Cohere</td>
+						<td>₹ 7355</td>
+						<td>43</td>
+						<td>₹ 316265</td>
+					</tr>
+					
+					<tr>
+						<td>22</td>
+						<td>Dody</td>
+						<td>Repair Carina, Via Natural or Artificial Opening</td>
+						<td>₹ 2506</td>
+						<td>29</td>
+						<td>₹ 72674</td>
+					</tr>
+					
+					<tr>
+						<td>23</td>
+						<td>Rycca</td>
+						<td>Fluoroscopy of Left Heart using High Osmolar Contrast</td>
+						<td>₹ 5301</td>
+						<td>35</td>
+						<td>₹ 185535</td>
+					</tr>
+					
+					<tr>
+						<td>24</td>
+						<td>Dyanne</td>
+						<td>Transfuse Autol Frozen Red Cells in Periph Vein, Open</td>
+						<td>₹ 6101</td>
+						<td>35</td>
+						<td>₹ 213535</td>
+					</tr>
+					
+					<tr>
+						<td>25</td>
+						<td>Bing</td>
+						<td>Excision of Left Toe Phalanx, Open Approach, Diagnostic</td>
+						<td>₹ 5872</td>
+						<td>1</td>
+						<td>₹ 5872</td>
+					</tr>
+					
+					<tr>
+						<td>26</td>
+						<td>Lukas</td>
+						<td>Removal of Synth Sub from L Thumb Phalanx, Open Approach</td>
+						<td>₹ 2406</td>
+						<td>5</td>
+						<td>₹ 12030</td>
+					</tr>
+					
+					<tr>
+						<td>27</td>
+						<td>Westleigh</td>
+						<td>Dilate Celiac Art, Bifurc, w 4 Drug-elut, Open</td>
+						<td>₹ 6766</td>
+						<td>35</td>
+						<td>₹ 236810</td>
+					</tr>
+					
+					<tr>
+						<td>28</td>
+						<td>Jessamine</td>
+						<td>Drainage of Left Foot Vein, Open Approach, Diagnostic</td>
+						<td>₹ 9833</td>
+						<td>12</td>
+						<td>₹ 117996</td>
+					</tr>
+					
+					<tr>
+						<td>29</td>
+						<td>Derril</td>
+						<td>Reposition Left Occipital Bone, Open Approach</td>
+						<td>₹ 9448</td>
+						<td>42</td>
+						<td>₹ 396816</td>
+					</tr>
+					
+					<tr>
+						<td>30</td>
+						<td>Torrin</td>
+						<td>Restrict R Great Saphenous w Extralum Dev, Open</td>
+						<td>₹ 9260</td>
+						<td>8</td>
+						<td>₹ 74080</td>
+					</tr>
+					
+					<tr>
+						<td>31</td>
+						<td>Siward</td>
+						<td>Drain of R Humeral Head with Drain Dev, Perc Endo Approach</td>
+						<td>₹ 3062</td>
+						<td>13</td>
+						<td>₹ 39806</td>
+					</tr>
+					
+					<tr>
+						<td>32</td>
+						<td>Ethelda</td>
+						<td>Restriction of Int Mamm, R Lymph, Perc Endo Approach</td>
+						<td>₹ 6715</td>
+						<td>50</td>
+						<td>₹ 335750</td>
+					</tr>
+					
+					<tr>
+						<td>33</td>
+						<td>Levon</td>
+						<td>Supplement Left Neck Lymphatic with Synth Sub, Open Approach</td>
+						<td>₹ 9695</td>
+						<td>7</td>
+						<td>₹ 67865</td>
+					</tr>
+					
+					<tr>
+						<td>34</td>
+						<td>Dene</td>
+						<td>Lower Joints, Extirpation</td>
+						<td>₹ 8136</td>
+						<td>1</td>
+						<td>₹ 8136</td>
+					</tr>
+					
+					<tr>
+						<td>35</td>
+						<td>Mychal</td>
+						<td>Replacement of Splenic Artery with Nonaut Sub, Open Approach</td>
+						<td>₹ 3275</td>
+						<td>38</td>
+						<td>₹ 124450</td>
+					</tr>
+					
+					<tr>
+						<td>36</td>
+						<td>Sally</td>
+						<td>Reposition R Humeral Head with Intramed Fix, Open Approach</td>
+						<td>₹ 7205</td>
+						<td>44</td>
+						<td>₹ 317020</td>
+					</tr>
+					
+					<tr>
+						<td>37</td>
+						<td>Margie</td>
+						<td>Repair Left Metacarpocarpal Joint, Percutaneous Approach</td>
+						<td>₹ 2300</td>
+						<td>46</td>
+						<td>₹ 105800</td>
+					</tr>
+					
+					<tr>
+						<td>38</td>
+						<td>Karalynn</td>
+						<td>Ultrasonography of Portal and Splanchnic Veins, Guidance</td>
+						<td>₹ 5815</td>
+						<td>48</td>
+						<td>₹ 279120</td>
+					</tr>
+					
+					<tr>
+						<td>39</td>
+						<td>Melodie</td>
+						<td>Excision of Prepuce, Percutaneous Approach, Diagnostic</td>
+						<td>₹ 5284</td>
+						<td>46</td>
+						<td>₹ 243064</td>
+					</tr>
+					
+					<tr>
+						<td>40</td>
+						<td>Durante</td>
+						<td>Revision of Infusion Device in R Tarsal Jt, Open Approach</td>
+						<td>₹ 6951</td>
+						<td>37</td>
+						<td>₹ 257187</td>
+					</tr>
+					
+					<tr>
+						<td>41</td>
+						<td>Vasily</td>
+						<td>Removal of Intbd Fus Dev from Cerv Jt, Perc Endo Approach</td>
+						<td>₹ 9578</td>
+						<td>7</td>
+						<td>₹ 67046</td>
+					</tr>
+					
+					<tr>
+						<td>42</td>
+						<td>Pauly</td>
+						<td>Insertion of Monitor Dev into Pulm Trunk, Open Approach</td>
+						<td>₹ 1513</td>
+						<td>11</td>
+						<td>₹ 16643</td>
+					</tr>
+					
+					<tr>
+						<td>43</td>
+						<td>Marinna</td>
+						<td>Removal of Synth Sub from Testis, Perc Endo Approach</td>
+						<td>₹ 5610</td>
+						<td>10</td>
+						<td>₹ 56100</td>
+					</tr>
+					
+					<tr>
+						<td>44</td>
+						<td>Helen</td>
+						<td>Supplement Thor Aorta Asc with Nonaut Sub, Open Approach</td>
+						<td>₹ 5648</td>
+						<td>49</td>
+						<td>₹ 276752</td>
+					</tr>
+					
+					<tr>
+						<td>45</td>
+						<td>Claretta</td>
+						<td>Fusion Occip Jt w Intbd Fus Dev, Post Appr A Col, Open</td>
+						<td>₹ 9817</td>
+						<td>41</td>
+						<td>₹ 402497</td>
+					</tr>
+					
+					<tr>
+						<td>46</td>
+						<td>Lovell</td>
+						<td>Drainage of Right Main Bronchus, Open Approach</td>
+						<td>₹ 789</td>
+						<td>2</td>
+						<td>₹ 1578</td>
+					</tr>
+					
+					<tr>
+						<td>47</td>
+						<td>Selby</td>
+						<td>Introduce Intracirc Anesth in Central Vein, Perc</td>
+						<td>₹ 8985</td>
+						<td>15</td>
+						<td>₹ 134775</td>
+					</tr>
+					
+					<tr>
+						<td>48</td>
+						<td>Jorey</td>
+						<td>Insertion of Infusion Dev into L Verteb Art, Perc Approach</td>
+						<td>₹ 840</td>
+						<td>19</td>
+						<td>₹ 15960</td>
+					</tr>
+					
+					<tr>
+						<td>49</td>
+						<td>Brod</td>
+						<td>Measurement of Venous Pulse, Central, Open Approach</td>
+						<td>₹ 9272</td>
+						<td>30</td>
+						<td>₹ 278160</td>
+					</tr>
+					
+					<tr>
+						<td>50</td>
+						<td>Base</td>
+						<td>Supplement L Com Iliac Vein with Synth Sub, Open Approach</td>
+						<td>₹ 4220</td>
+						<td>23</td>
+						<td>₹ 97060</td>
+					</tr>
+					
+					<tr>
+						<td>51</td>
+						<td>Zacharia</td>
+						<td>Replacement of Com Bile Duct with Autol Sub, Open Approach</td>
+						<td>₹ 4652</td>
+						<td>40</td>
+						<td>₹ 186080</td>
+					</tr>
+					
+					<tr>
+						<td>52</td>
+						<td>Kerr</td>
+						<td>Revision of Spacer in R Sternoclav Jt, Perc Approach</td>
+						<td>₹ 1118</td>
+						<td>49</td>
+						<td>₹ 54782</td>
+					</tr>
+					
+					<tr>
+						<td>53</td>
+						<td>Tova</td>
+						<td>Revision of Neurostimulator Lead in Brain, External Approach</td>
+						<td>₹ 8726</td>
+						<td>8</td>
+						<td>₹ 69808</td>
+					</tr>
+					
+					<tr>
+						<td>54</td>
+						<td>Brit</td>
+						<td>Destruction of Thor Symp Nrv, Perc Endo Approach</td>
+						<td>₹ 5447</td>
+						<td>14</td>
+						<td>₹ 76258</td>
+					</tr>
+					
+					<tr>
+						<td>55</td>
+						<td>Janina</td>
+						<td>Reposition Right Hand Vein, Percutaneous Endoscopic Approach</td>
+						<td>₹ 7450</td>
+						<td>16</td>
+						<td>₹ 119200</td>
+					</tr>
+					
+					<tr>
+						<td>56</td>
+						<td>Monro</td>
+						<td>Destruction of Right Internal Jugular Vein, Perc Approach</td>
+						<td>₹ 3036</td>
+						<td>25</td>
+						<td>₹ 75900</td>
+					</tr>
+					
+					<tr>
+						<td>57</td>
+						<td>Brody</td>
+						<td>Revision of Nonaut Sub in Coccygeal Jt, Extern Approach</td>
+						<td>₹ 2146</td>
+						<td>26</td>
+						<td>₹ 55796</td>
+					</tr>
+					
+					<tr>
+						<td>58</td>
+						<td>Baldwin</td>
+						<td>CT Scan of R Wrist using Oth Contrast</td>
+						<td>₹ 1849</td>
+						<td>44</td>
+						<td>₹ 81356</td>
+					</tr>
+					
+					<tr>
+						<td>59</td>
+						<td>Stoddard</td>
+						<td>Drainage of Right Pleural Cavity, Perc Endo Approach</td>
+						<td>₹ 1463</td>
+						<td>26</td>
+						<td>₹ 38038</td>
+					</tr>
+					
+					<tr>
+						<td>60</td>
+						<td>Dorrie</td>
+						<td>Restriction of L Ulnar Art with Intralum Dev, Perc Approach</td>
+						<td>₹ 8297</td>
+						<td>32</td>
+						<td>₹ 265504</td>
+					</tr>
+					
+					<tr>
+						<td>61</td>
+						<td>Willa</td>
+						<td>Bypass R Int Iliac Art to R Int Ilia w Nonaut Sub, Open</td>
+						<td>₹ 435</td>
+						<td>28</td>
+						<td>₹ 12180</td>
+					</tr>
+					
+					<tr>
+						<td>62</td>
+						<td>Stephanie</td>
+						<td>Dilate of R Int Mamm Art with 2 Intralum Dev, Open Approach</td>
+						<td>₹ 2482</td>
+						<td>13</td>
+						<td>₹ 32266</td>
+					</tr>
+					
+					<tr>
+						<td>63</td>
+						<td>Beth</td>
+						<td>Revision of Synth Sub in L Pelvic Bone, Extern Approach</td>
+						<td>₹ 1405</td>
+						<td>26</td>
+						<td>₹ 36530</td>
+					</tr>
+					
+					<tr>
+						<td>64</td>
+						<td>Silvano</td>
+						<td>Revision of Synthetic Substitute in Penis, Perc Approach</td>
+						<td>₹ 1079</td>
+						<td>48</td>
+						<td>₹ 51792</td>
+					</tr>
+					
+					<tr>
+						<td>65</td>
+						<td>Nina</td>
+						<td>CT Scan of L Scapula using Oth Contrast</td>
+						<td>₹ 7421</td>
+						<td>48</td>
+						<td>₹ 356208</td>
+					</tr>
+					
+					<tr>
+						<td>66</td>
+						<td>Murray</td>
+						<td>Manual Therapy Techniques Treatment of Neuro Head, Neck</td>
+						<td>₹ 8362</td>
+						<td>37</td>
+						<td>₹ 309394</td>
+					</tr>
+					
+					<tr>
+						<td>67</td>
+						<td>Melody</td>
+						<td>Remove Radioact Elem from Vagina &amp; Cul-de-sac, Open</td>
+						<td>₹ 8631</td>
+						<td>9</td>
+						<td>₹ 77679</td>
+					</tr>
+					
+					<tr>
+						<td>68</td>
+						<td>Craggie</td>
+						<td>Beam Radiation of Bile Ducts using Photons &gt;10 MeV</td>
+						<td>₹ 8414</td>
+						<td>17</td>
+						<td>₹ 143038</td>
+					</tr>
+					
+					<tr>
+						<td>69</td>
+						<td>Eugenio</td>
+						<td>Dilation of L Ext Iliac Art, Bifurc, Open Approach</td>
+						<td>₹ 7589</td>
+						<td>38</td>
+						<td>₹ 288382</td>
+					</tr>
+					
+					<tr>
+						<td>70</td>
+						<td>Bryn</td>
+						<td>Excision of Right Hip Tendon, Open Approach</td>
+						<td>₹ 5011</td>
+						<td>26</td>
+						<td>₹ 130286</td>
+					</tr>
+					
+					<tr>
+						<td>71</td>
+						<td>Glenn</td>
+						<td>Removal of Infusion Dev from R Wrist Jt, Perc Endo Approach</td>
+						<td>₹ 3667</td>
+						<td>22</td>
+						<td>₹ 80674</td>
+					</tr>
+					
+					<tr>
+						<td>72</td>
+						<td>Ruperto</td>
+						<td>Reposition Right Peroneal Artery, Open Approach</td>
+						<td>₹ 7790</td>
+						<td>21</td>
+						<td>₹ 163590</td>
+					</tr>
+					
+					<tr>
+						<td>73</td>
+						<td>Dorelia</td>
+						<td>Revision of Autol Sub in Peritoneum, Perc Endo Approach</td>
+						<td>₹ 102</td>
+						<td>3</td>
+						<td>₹ 306</td>
+					</tr>
+					
+					<tr>
+						<td>74</td>
+						<td>Chicky</td>
+						<td>Transplantation of L Up Lung Lobe, Allogen, Open Approach</td>
+						<td>₹ 9828</td>
+						<td>29</td>
+						<td>₹ 285012</td>
+					</tr>
+					
+					<tr>
+						<td>75</td>
+						<td>Burt</td>
+						<td>Replacement of R Basilic Vein with Synth Sub, Open Approach</td>
+						<td>₹ 2983</td>
+						<td>21</td>
+						<td>₹ 62643</td>
+					</tr>
+					
+					<tr>
+						<td>76</td>
+						<td>Renado</td>
+						<td>Detachment at Right Elbow Region, Open Approach</td>
+						<td>₹ 9216</td>
+						<td>7</td>
+						<td>₹ 64512</td>
+					</tr>
+					
+					<tr>
+						<td>77</td>
+						<td>Liane</td>
+						<td>Resection of Right Thorax Bursa and Ligament, Open Approach</td>
+						<td>₹ 9454</td>
+						<td>43</td>
+						<td>₹ 406522</td>
+					</tr>
+					
+					<tr>
+						<td>78</td>
+						<td>Ralph</td>
+						<td>Supplement L Ext Jugular Vein with Nonaut Sub, Perc Approach</td>
+						<td>₹ 44</td>
+						<td>10</td>
+						<td>₹ 440</td>
+					</tr>
+					
+					<tr>
+						<td>79</td>
+						<td>Belvia</td>
+						<td>Supplement Left Epididymis with Nonaut Sub, Open Approach</td>
+						<td>₹ 6403</td>
+						<td>29</td>
+						<td>₹ 185687</td>
+					</tr>
+					
+					<tr>
+						<td>80</td>
+						<td>Carroll</td>
+						<td>Removal of Extralum Dev from Great Vessel, Open Approach</td>
+						<td>₹ 6083</td>
+						<td>11</td>
+						<td>₹ 66913</td>
+					</tr>
+					
+					<tr>
+						<td>81</td>
+						<td>Ernestus</td>
+						<td>Removal of Nonaut Sub from Tracheobronc Tree, Perc Approach</td>
+						<td>₹ 4964</td>
+						<td>14</td>
+						<td>₹ 69496</td>
+					</tr>
+					
+					<tr>
+						<td>82</td>
+						<td>Jeanie</td>
+						<td>Dilation of Coronary Artery, Two Arteries, Perc Approach</td>
+						<td>₹ 4844</td>
+						<td>15</td>
+						<td>₹ 72660</td>
+					</tr>
+					
+					<tr>
+						<td>83</td>
+						<td>Keelby</td>
+						<td>Remove Drain Dev from Epididymis/Sperm Cord, Open</td>
+						<td>₹ 4968</td>
+						<td>41</td>
+						<td>₹ 203688</td>
+					</tr>
+					
+					<tr>
+						<td>84</td>
+						<td>Corbet</td>
+						<td>Bypass L Innom Vein to Up Vein with Autol Sub, Open Approach</td>
+						<td>₹ 1957</td>
+						<td>39</td>
+						<td>₹ 76323</td>
+					</tr>
+					
+					<tr>
+						<td>85</td>
+						<td>Valencia</td>
+						<td>Repair Left Lower Leg Tendon, Perc Endo Approach</td>
+						<td>₹ 4579</td>
+						<td>34</td>
+						<td>₹ 155686</td>
+					</tr>
+					
+					<tr>
+						<td>86</td>
+						<td>Willis</td>
+						<td>Supplement L Ethmoid Bone with Synth Sub, Perc Endo Approach</td>
+						<td>₹ 3795</td>
+						<td>34</td>
+						<td>₹ 129030</td>
+					</tr>
+					
+					<tr>
+						<td>87</td>
+						<td>Laney</td>
+						<td>Transfuse Nonaut Antihemophilic in Periph Vein, Perc</td>
+						<td>₹ 1245</td>
+						<td>48</td>
+						<td>₹ 59760</td>
+					</tr>
+					
+					<tr>
+						<td>88</td>
+						<td>Mamie</td>
+						<td>Revision of Synthetic Substitute in Mesentery, Perc Approach</td>
+						<td>₹ 4602</td>
+						<td>33</td>
+						<td>₹ 151866</td>
+					</tr>
+					
+					<tr>
+						<td>89</td>
+						<td>Regan</td>
+						<td>Range of Motion and Joint Mobility Treatment of Neuro Body</td>
+						<td>₹ 1906</td>
+						<td>49</td>
+						<td>₹ 93394</td>
+					</tr>
+					
+					<tr>
+						<td>90</td>
+						<td>Hayes</td>
+						<td>Replacement of R Elbow Jt with Synth Sub, Open Approach</td>
+						<td>₹ 560</td>
+						<td>35</td>
+						<td>₹ 19600</td>
+					</tr>
+					
+					<tr>
+						<td>91</td>
+						<td>Evelyn</td>
+						<td>Removal of Nonaut Sub from Larynx, Open Approach</td>
+						<td>₹ 7384</td>
+						<td>30</td>
+						<td>₹ 221520</td>
+					</tr>
+					
+					<tr>
+						<td>92</td>
+						<td>Lolly</td>
+						<td>Drainage of Left Kidney, Via Natural or Artificial Opening</td>
+						<td>₹ 3634</td>
+						<td>15</td>
+						<td>₹ 54510</td>
+					</tr>
+					
+					<tr>
+						<td>93</td>
+						<td>Cristian</td>
+						<td>Supplement R Up Extrem Lymph w Autol Sub, Perc Endo</td>
+						<td>₹ 1292</td>
+						<td>36</td>
+						<td>₹ 46512</td>
+					</tr>
+					
+					<tr>
+						<td>94</td>
+						<td>Sayers</td>
+						<td>Supplement L Ulnar Art with Synth Sub, Perc Endo Approach</td>
+						<td>₹ 8229</td>
+						<td>24</td>
+						<td>₹ 197496</td>
+					</tr>
+					
+					<tr>
+						<td>95</td>
+						<td>Turner</td>
+						<td>Bypass L Com Iliac Art to R Ext Ilia w Synth Sub, Perc Endo</td>
+						<td>₹ 1109</td>
+						<td>14</td>
+						<td>₹ 15526</td>
+					</tr>
+					
+					<tr>
+						<td>96</td>
+						<td>Livvie</td>
+						<td>Revision of Spacer in L Metatarsophal Jt, Perc Endo Approach</td>
+						<td>₹ 8904</td>
+						<td>32</td>
+						<td>₹ 284928</td>
+					</tr>
+					
+					<tr>
+						<td>97</td>
+						<td>Rafe</td>
+						<td>Revision of Autol Sub in L Toe Phalanx Jt, Perc Approach</td>
+						<td>₹ 4141</td>
+						<td>3</td>
+						<td>₹ 12423</td>
+					</tr>
+					
+					<tr>
+						<td>98</td>
+						<td>Druci</td>
+						<td>Plain Radiography of Cervical Disc(s) using H Osm Contrast</td>
+						<td>₹ 4053</td>
+						<td>25</td>
+						<td>₹ 101325</td>
+					</tr>
+					
+					<tr>
+						<td>99</td>
+						<td>Kary</td>
+						<td>Extirpation of Matter from Right Renal Vein, Perc Approach</td>
+						<td>₹ 4849</td>
+						<td>50</td>
+						<td>₹ 242450</td>
+					</tr>
+					
+					<tr>
+						<td>100</td>
+						<td>Callida</td>
+						<td>Occlusion of L Inqnl Lymph with Extralum Dev, Perc Approach</td>
+						<td>₹ 9787</td>
+						<td>42</td>
+						<td>₹ 411054</td>
+					</tr>
+					
+					<tr>
+						<td>101</td>
+						<td>Chrystal</td>
+						<td>Revision of Synthetic Substitute in Lum Jt, Perc Approach</td>
+						<td>₹ 784</td>
+						<td>44</td>
+						<td>₹ 34496</td>
+					</tr>
+					
+					<tr>
+						<td>102</td>
+						<td>Hyacinthie</td>
+						<td>Bypass R Atrium to L Pulm Art with Nonaut Sub, Open Approach</td>
+						<td>₹ 7330</td>
+						<td>47</td>
+						<td>₹ 344510</td>
+					</tr>
+					
+					<tr>
+						<td>103</td>
+						<td>Berk</td>
+						<td>Excision of Upper Esophagus, Endo</td>
+						<td>₹ 7577</td>
+						<td>9</td>
+						<td>₹ 68193</td>
+					</tr>
+					
+					<tr>
+						<td>104</td>
+						<td>Kenna</td>
+						<td>Dilate L Ant Tib Art, Bifurc, w 4 Drug-elut, Perc</td>
+						<td>₹ 2065</td>
+						<td>9</td>
+						<td>₹ 18585</td>
+					</tr>
+					
+					<tr>
+						<td>105</td>
+						<td>Bryce</td>
+						<td>Dilation of L Foot Art with Intralum Dev, Perc Approach</td>
+						<td>₹ 2923</td>
+						<td>10</td>
+						<td>₹ 29230</td>
+					</tr>
+					
+					<tr>
+						<td>106</td>
+						<td>Lin</td>
+						<td>Drainage of Lumbar Nerve with Drain Dev, Perc Endo Approach</td>
+						<td>₹ 8904</td>
+						<td>30</td>
+						<td>₹ 267120</td>
+					</tr>
+					
+					<tr>
+						<td>107</td>
+						<td>Legra</td>
+						<td>Beam Radiation of Ear using Heavy Particles (Protons,Ions)</td>
+						<td>₹ 8093</td>
+						<td>13</td>
+						<td>₹ 105209</td>
+					</tr>
+					
+					<tr>
+						<td>108</td>
+						<td>Gale</td>
+						<td>Insertion of Monitor Dev into Pancreas, Perc Endo Approach</td>
+						<td>₹ 2283</td>
+						<td>17</td>
+						<td>₹ 38811</td>
+					</tr>
+					
+					<tr>
+						<td>109</td>
+						<td>Donnajean</td>
+						<td>Hyperthermia of Left Breast</td>
+						<td>₹ 4083</td>
+						<td>48</td>
+						<td>₹ 195984</td>
+					</tr>
+					
+					<tr>
+						<td>110</td>
+						<td>Dulcea</td>
+						<td>CT Scan of Chest, Abd &amp; Pelvis using Oth Contrast</td>
+						<td>₹ 6022</td>
+						<td>35</td>
+						<td>₹ 210770</td>
+					</tr>
+					
+					<tr>
+						<td>111</td>
+						<td>Enrique</td>
+						<td>Revision of Bone Stim in Up Bone, Extern Approach</td>
+						<td>₹ 7250</td>
+						<td>9</td>
+						<td>₹ 65250</td>
+					</tr>
+					
+					<tr>
+						<td>112</td>
+						<td>Emmalynne</td>
+						<td>Dilation of Left Radial Artery, Perc Endo Approach</td>
+						<td>₹ 1951</td>
+						<td>13</td>
+						<td>₹ 25363</td>
+					</tr>
+					
+					<tr>
+						<td>113</td>
+						<td>Maurine</td>
+						<td>Dilate L Colic Art, Bifurc, w 4 Drug-elut, Perc</td>
+						<td>₹ 3836</td>
+						<td>22</td>
+						<td>₹ 84392</td>
+					</tr>
+					
+					<tr>
+						<td>114</td>
+						<td>Evangelia</td>
+						<td>Drainage of Right External Ear, Open Approach, Diagnostic</td>
+						<td>₹ 5433</td>
+						<td>47</td>
+						<td>₹ 255351</td>
+					</tr>
+					
+					<tr>
+						<td>115</td>
+						<td>Trumann</td>
+						<td>Radiation Therapy, Breast, Beam Radiation</td>
+						<td>₹ 2730</td>
+						<td>15</td>
+						<td>₹ 40950</td>
+					</tr>
+					
+					<tr>
+						<td>116</td>
+						<td>Fredrika</td>
+						<td>LDR Brachytherapy of Jejunum using Cesium 137</td>
+						<td>₹ 4052</td>
+						<td>10</td>
+						<td>₹ 40520</td>
+					</tr>
+					
+					<tr>
+						<td>117</td>
+						<td>Michaella</td>
+						<td>Excision of L Sup Parathyroid, Perc Endo Approach, Diagn</td>
+						<td>₹ 5092</td>
+						<td>42</td>
+						<td>₹ 213864</td>
+					</tr>
+					
+					<tr>
+						<td>118</td>
+						<td>Indira</td>
+						<td>Release Left Large Intestine, Perc Endo Approach</td>
+						<td>₹ 3527</td>
+						<td>3</td>
+						<td>₹ 10581</td>
+					</tr>
+					
+					<tr>
+						<td>119</td>
+						<td>Rudyard</td>
+						<td>Extraction of Right Ethmoid Sinus, Perc Endo Approach</td>
+						<td>₹ 9203</td>
+						<td>41</td>
+						<td>₹ 377323</td>
+					</tr>
+					
+					<tr>
+						<td>120</td>
+						<td>Sophey</td>
+						<td>Nonimaging Nuclear Medicine Probe of Chest using Indium 111</td>
+						<td>₹ 8048</td>
+						<td>16</td>
+						<td>₹ 128768</td>
+					</tr>
+					
+					<tr>
+						<td>121</td>
+						<td>Heidie</td>
+						<td>Drainage of Right Subclavian Vein, Open Approach</td>
+						<td>₹ 5100</td>
+						<td>9</td>
+						<td>₹ 45900</td>
+					</tr>
+					
+					<tr>
+						<td>122</td>
+						<td>Wynny</td>
+						<td>Transfuse Autol Fresh Plasma in Periph Art, Perc</td>
+						<td>₹ 386</td>
+						<td>24</td>
+						<td>₹ 9264</td>
+					</tr>
+					
+					<tr>
+						<td>123</td>
+						<td>Giuditta</td>
+						<td>Drainage of Radial Nerve with Drain Dev, Perc Endo Approach</td>
+						<td>₹ 1043</td>
+						<td>18</td>
+						<td>₹ 18774</td>
+					</tr>
+					
+					<tr>
+						<td>124</td>
+						<td>Karmen</td>
+						<td>Replace R Cephalic Vein w Nonaut Sub, Perc Endo</td>
+						<td>₹ 6752</td>
+						<td>17</td>
+						<td>₹ 114784</td>
+					</tr>
+					
+					<tr>
+						<td>125</td>
+						<td>Vaughn</td>
+						<td>Transfer R Low Leg Subcu/Fascia w Skin, Subcu, Fascia, Perc</td>
+						<td>₹ 9324</td>
+						<td>29</td>
+						<td>₹ 270396</td>
+					</tr>
+					
+					<tr>
+						<td>126</td>
+						<td>Lanita</td>
+						<td>Release Left Neck Lymphatic, Open Approach</td>
+						<td>₹ 7463</td>
+						<td>31</td>
+						<td>₹ 231353</td>
+					</tr>
+					
+					<tr>
+						<td>127</td>
+						<td>Justinn</td>
+						<td>Exercise Treatment of Resp Head, Neck using Mech Equipment</td>
+						<td>₹ 4775</td>
+						<td>7</td>
+						<td>₹ 33425</td>
+					</tr>
+					
+					<tr>
+						<td>128</td>
+						<td>Nolan</td>
+						<td>Drainage of Right Nipple with Drain Dev, Extern Approach</td>
+						<td>₹ 7504</td>
+						<td>35</td>
+						<td>₹ 262640</td>
+					</tr>
+					
+					<tr>
+						<td>129</td>
+						<td>Abeu</td>
+						<td>MRI of Whole Fetus using Oth Contrast, Unenh, Enhance</td>
+						<td>₹ 7500</td>
+						<td>33</td>
+						<td>₹ 247500</td>
+					</tr>
+					
+					<tr>
+						<td>130</td>
+						<td>Rhona</td>
+						<td>Destruction of Bilateral Fallopian Tubes, Via Opening</td>
+						<td>₹ 7563</td>
+						<td>45</td>
+						<td>₹ 340335</td>
+					</tr>
+					
+					<tr>
+						<td>131</td>
+						<td>Wilie</td>
+						<td>Contact Radiation of Bile Ducts</td>
+						<td>₹ 7685</td>
+						<td>7</td>
+						<td>₹ 53795</td>
+					</tr>
+					
+					<tr>
+						<td>132</td>
+						<td>Ted</td>
+						<td>Introduction of Nutritional Substance into Fem Reprod, Endo</td>
+						<td>₹ 2347</td>
+						<td>18</td>
+						<td>₹ 42246</td>
+					</tr>
+					
+					<tr>
+						<td>133</td>
+						<td>Lauryn</td>
+						<td>Supplement R Knee with Nonaut Sub, Perc Endo Approach</td>
+						<td>₹ 8718</td>
+						<td>28</td>
+						<td>₹ 244104</td>
+					</tr>
+					
+					<tr>
+						<td>134</td>
+						<td>Anstice</td>
+						<td>Revision of Infusion Device in Genitourinary Tract, Endo</td>
+						<td>₹ 2112</td>
+						<td>50</td>
+						<td>₹ 105600</td>
+					</tr>
+					
+					<tr>
+						<td>135</td>
+						<td>Jade</td>
+						<td>Destruction of Perineum Tendon, Perc Endo Approach</td>
+						<td>₹ 817</td>
+						<td>5</td>
+						<td>₹ 4085</td>
+					</tr>
+					
+					<tr>
+						<td>136</td>
+						<td>Zaccaria</td>
+						<td>Replacement of Bi Breast using Lat Dorsi Flap, Open Approach</td>
+						<td>₹ 8449</td>
+						<td>23</td>
+						<td>₹ 194327</td>
+					</tr>
+					
+					<tr>
+						<td>137</td>
+						<td>Kirbee</td>
+						<td>Dilation of Right Internal Iliac Artery, Open Approach</td>
+						<td>₹ 8887</td>
+						<td>39</td>
+						<td>₹ 346593</td>
+					</tr>
+					
+					<tr>
+						<td>138</td>
+						<td>Loralie</td>
+						<td>Repair Left Little Finger, Percutaneous Endoscopic Approach</td>
+						<td>₹ 695</td>
+						<td>16</td>
+						<td>₹ 11120</td>
+					</tr>
+					
+					<tr>
+						<td>139</td>
+						<td>Virgie</td>
+						<td>Supplement Mediastinum with Synth Sub, Perc Endo Approach</td>
+						<td>₹ 4556</td>
+						<td>13</td>
+						<td>₹ 59228</td>
+					</tr>
+					
+					<tr>
+						<td>140</td>
+						<td>Quintina</td>
+						<td>Immobilization of Left Upper Arm using Other Device</td>
+						<td>₹ 3039</td>
+						<td>45</td>
+						<td>₹ 136755</td>
+					</tr>
+					
+					<tr>
+						<td>141</td>
+						<td>Karel</td>
+						<td>Excision of Lumbar Sympathetic Nerve, Perc Endo Approach</td>
+						<td>₹ 3848</td>
+						<td>20</td>
+						<td>₹ 76960</td>
+					</tr>
+					
+					<tr>
+						<td>142</td>
+						<td>Ali</td>
+						<td>Bypass R Brach Vein to Up Vein w Autol Vn, Perc Endo</td>
+						<td>₹ 190</td>
+						<td>5</td>
+						<td>₹ 950</td>
+					</tr>
+					
+					<tr>
+						<td>143</td>
+						<td>Francois</td>
+						<td>Introduction of Serum/Tox/Vaccine into Muscle, Perc Approach</td>
+						<td>₹ 5147</td>
+						<td>12</td>
+						<td>₹ 61764</td>
+					</tr>
+					
+					<tr>
+						<td>144</td>
+						<td>Carlye</td>
+						<td>Introduction of Anti-inflammatory into POC, Via Opening</td>
+						<td>₹ 5725</td>
+						<td>40</td>
+						<td>₹ 229000</td>
+					</tr>
+					
+					<tr>
+						<td>145</td>
+						<td>Alvira</td>
+						<td>Lymphatic and Hemic Systems, Supplement</td>
+						<td>₹ 7656</td>
+						<td>49</td>
+						<td>₹ 375144</td>
+					</tr>
+					
+					<tr>
+						<td>146</td>
+						<td>Loralee</td>
+						<td>Bypass L Subclav Art to R Low Leg Art w Nonaut Sub, Open</td>
+						<td>₹ 4041</td>
+						<td>9</td>
+						<td>₹ 36369</td>
+					</tr>
+					
+					<tr>
+						<td>147</td>
+						<td>Erich</td>
+						<td>Excision of Aortic Lymphatic, Open Approach</td>
+						<td>₹ 61</td>
+						<td>37</td>
+						<td>₹ 2257</td>
+					</tr>
+					
+					<tr>
+						<td>148</td>
+						<td>Ebonee</td>
+						<td>Dilation of L Colic Art with 3 Drug-elut, Open Approach</td>
+						<td>₹ 3401</td>
+						<td>45</td>
+						<td>₹ 153045</td>
+					</tr>
+					
+					<tr>
+						<td>149</td>
+						<td>Justen</td>
+						<td>Computerized Tomography (CT Scan) of Pelvis</td>
+						<td>₹ 71</td>
+						<td>29</td>
+						<td>₹ 2059</td>
+					</tr>
+					
+					<tr>
+						<td>150</td>
+						<td>Shermy</td>
+						<td>Introduction of Electrol/Water Bal into Up GI, Perc Approach</td>
+						<td>₹ 4471</td>
+						<td>2</td>
+						<td>₹ 8942</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<div class="payment-info">
+				<div class="payment-column">
+					<p>Pay by: 20 October, 2023</p>
+				</div>
+				<div class="payment-column">
+					<p>Total Bill Amount: ₹ 20719027</p>
+				</div>
+				<div class="payment-column">
+					<p>Interest Per Day: ₹ 150</p>
+				</div>
+			</div>
+			<footer>
+				<p>This is an auto-generated invoice</p>
+			</footer>
+		</div>
+	</body>
+</html>

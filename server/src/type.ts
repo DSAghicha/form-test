@@ -20,3 +20,30 @@ export interface IBody {
 		productImage: string
 	}[]
 }
+
+export interface InvoiceData {
+	logoPath: string
+	organizationName: string
+	ownerName: string
+	orgRefId: string
+	strength: number
+	lastBillDate: string
+	orgDate: string
+	gstNumber: string
+	productCount: number
+	lastBillAmount: string
+	billingStartDate: string
+	billingEndDate: string
+	products: Product[]
+	lastDate: string
+	totalBillAmount: number
+	interestPerDay: number
+}
+
+interface Product {
+	name: string
+	description: string
+	amount: number
+	quantity: number
+	total: number
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Invoice</title>
+		<style>
+			.container {
+				margin: 20px;
+				padding: 20px;
+			}
+			.container header {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 1rem;
+			}
+			.details {
+				display: flex;
+				flex-direction: row;
+			}
+			.details .column {
+				width: 50%;
+			}
+			.billing-period,
+			footer {
+				text-align: center;
+			}
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-top: 20px;
+				border: 1px solid black;
+			}
+			th,
+			td {
+				border: 1px solid black;
+				padding: 8px;
+			}
+			th {
+				background-color: #f2f2f2;
+			}
+			.payment-info,
+			footer {
+				margin-top: 20px;
+			}
+			.payment-column {
+				width: 30%;
+				display: inline-block;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<img
+					src="<%= logoPath %>"
+					width="100"
+					alt="OrgLogo"
+				/>
+				<h1><%= organizationName %></h1>
+			</header>
+			<section class="details">
+				<div class="column">
+					<p><b>Owner: </b><%= ownerName %></p>
+					<p><b>Ref Id: </b><%= orgRefId %></p>
+					<p><b>Strength: </b><%= strength %></p>
+					<p><b>Last bill date: </b><%= lastBillDate %></p>
+				</div>
+				<div class="column">
+					<p><b>Established on: </b><%= orgDate %></p>
+					<p><b>GST number: </b><%= gstNumber %></p>
+					<p><b>Product count: </b><%= productCount %></p>
+					<p><b>Last bill amount: </b><%= lastBillAmount %></p>
+				</div>
+			</section>
+			<p class="billing-period">Billing for: <%= billingStartDate %> to <%= billingEndDate %></p>
+			<table>
+				<thead>
+					<tr>
+						<th>Sr No</th>
+						<th>Product Name</th>
+						<th>Product Description</th>
+						<th>Amount</th>
+						<th>Quantity</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% products.forEach((product, index) => { %>
+					<tr>
+						<td><%= index + 1 %></td>
+						<td><%= product.name %></td>
+						<td><%= product.description %></td>
+						<td>₹ <%= product.amount %></td>
+						<td><%= product.quantity %></td>
+						<td>₹ <%= product.total %></td>
+					</tr>
+					<% }); %>
+				</tbody>
+			</table>
+			<div class="payment-info">
+				<div class="payment-column">
+					<p>Pay by: <%= lastDate %></p>
+				</div>
+				<div class="payment-column">
+					<p>Total Bill Amount: ₹ <%= totalBillAmount %></p>
+				</div>
+				<div class="payment-column">
+					<p>Interest Per Day: ₹ <%= interestPerDay %></p>
+				</div>
+			</div>
+			<footer>
+				<p>This is an auto-generated invoice</p>
+			</footer>
+		</div>
+	</body>
+</html>
